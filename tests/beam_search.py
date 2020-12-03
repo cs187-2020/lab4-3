@@ -20,9 +20,10 @@ test = {   'name': 'beam_search',
                                                "...   ground_truth = ground_truth.lstrip('<bos>').rstrip('<eos>').strip()\n"
                                                '...   if ground_truth == prediction:\n'
                                                '...     correct += 1\n'
+                                               '...     break\n'
                                                '...   total += 1\n'
                                                '...   \n'
-                                               '>>> correct/total > 0\n'
+                                               '>>> correct > 0\n'
                                                'True',
                                        'hidden': False,
                                        'locked': False}],
